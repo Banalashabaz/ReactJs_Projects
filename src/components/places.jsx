@@ -1,12 +1,13 @@
 import React from 'react'
-function Places() {
-    return ( <div id="places">
-        <h1>
-          <span style={{ color: "#18b06c" }}>Popular </span>Places{" "}
-        </h1>
+function Places(props) {
+
+    return ( 
+    <div id="places">
+      
+      
         <div id="card-container">
           <div className="card-places">
-            <div id="imgone">
+            <div id={props.background}>
               <br />
               <br />
               <br /> <br />
@@ -15,7 +16,7 @@ function Places() {
                 style={{ marginTop: 150, color: "white", marginLeft: 0 }}
                 id="cont1"
               >
-                Cancun,Mexico
+              <div id="placename"> {props.name}</div>
               </span>
             </div>
             <div style={{ padding: 20 }}>
@@ -23,47 +24,13 @@ function Places() {
               enim neque eos eligendi? Sit
             </div>
           </div>
-          <div className="card-places">
-            <div id="imgtwo">
-              <br />
-              <br />
-              <br /> <br />
-              <br />
-              <span
-                style={{ marginTop: 150, color: "white", marginLeft: 0 }}
-                id="cont2"
-              >
-                The Bahamas
-              </span>
-              <div style={{ padding: 20, marginTop: 40 }}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nobis
-                enim neque eos eligendi? Sit
-              </div>
-            </div>
           </div>
-          <div className="card-places">
-            <div id="imgthree">
-              <br />
-              <br />
-              <br /> <br />
-              <br />
-              <span
-                style={{ marginTop: 150, color: "white", marginLeft: 0 }}
-                id="cont3"
-              >
-                Nova Scotia
-              </span>
-              <div style={{ padding: 20, marginTop: 40 }}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nobis
-                enim neque eos eligendi? Sit
-              </div>
-            </div>
-          </div>
-        </div>
-        <button>
-          <i className="fa-solid fa-paper-plane" /> CONTACT FOR BOOKING
-        </button>
-      </div>
+
+
+        
+
+     </div>
+  
      );
 }
 

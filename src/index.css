@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Card_align{
+  display: flex;
+  justify-content: center;
+  gap:80px;
+}
+#plane{
+  color: "#18b06c";
+  font-Size: 80px;
+  height: 50px;
+  width: 70px;
+  margin-Top: 100px;
+  margin-Left: 100px;
+}
+.Lastcard{
+  margin-top:30px;
+}
+.place_container{
+  display: flex;
+ justify-content: center;
+ gap:80px
+}
+div h1{
+  margin-left: 35%;
+ font-weight: 700;
+ margin-top: 50px;
+}
+#placename{
+  font-size: 30px;
+}

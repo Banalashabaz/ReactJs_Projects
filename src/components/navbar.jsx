@@ -3,7 +3,7 @@ function Navbar() {
     return ( 
         <header>
         <div id="navbar" class="container-fluid ">
-            <div id="company">Travel Career</div>
+            <div id="company">TravelVille</div>
             <div id="list" ><ul>
        
                 <li><a href="#myCarousel">Home</a></li>

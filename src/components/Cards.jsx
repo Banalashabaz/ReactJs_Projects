@@ -1,13 +1,13 @@
 import React from 'react'
-function Cards() {
+function Cards(props) {
     return ( 
         <div id="card-container">
         <div className="cards">
-          <i className="fa-solid fa-location-dot"  ></i>
-          <h2>Pick Where</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam, beatae magni laborum numquam alias maxime</p>
+          <i className={props.icon} style={props.style} ></i>
+          <h2>{props.place}</h2>
+          <p>{props.para}</p>
         </div>
-        <div className="cards">
+        {/* <div className="cards">
           <i className="fa-solid fa-shop"></i>
           <h2>Travel Shop</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam, beatae magni laborum numquam alias maxime</p>
@@ -29,7 +29,7 @@ function Cards() {
           <h2 >Fly Cheap</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam, beatae magni laborum numquam alias maxime</p>
 
-        </div>
+        </div> */}
       </div>
      );
 }
